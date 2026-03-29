@@ -1,0 +1,58 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Sat Mar 28 01:22:46 2026
+| Host         : LAPTOP-QR3M58JR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_parent_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_parent_0_0 (xilinx.com:user:parent:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Sat Mar 28 01:07:54 2026
+| Host         : LAPTOP-QR3M58JR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_parent_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_parent_0_0 (xilinx.com:user:parent:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Fri Mar 27 21:55:07 2026
+| Host         : LAPTOP-QR3M58JR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_parent_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_parent_0_0 (xilinx.com:user:parent:1.0) from (Rev. 2) to (Rev. 3)
+

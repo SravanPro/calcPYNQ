@@ -1,0 +1,7 @@
+Running: xsim.dir/newTB_trig_behav/xsimk.exe -simmode gui -wdb newTB_trig_behav.wdb -simrunnum 0 -socket 63059
+Design successfully loaded
+Design Loading Memory Usage: 11432 KB (Peak: 11432 KB)
+Design Loading CPU Usage: 77 ms
+Simulation completed
+Simulation Memory Usage: 22120 KB (Peak: 22120 KB)
+Simulation CPU Usage: 41671 ms

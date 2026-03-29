@@ -1,0 +1,48 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/add.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/clockDivider.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockDivider
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/cos_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cos_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/debouncer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/div.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/ds.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataStructure
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/exp_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/itp.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inToPost
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/kb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyboard
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/ln_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ln_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/log_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module log_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/mul.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/mul10Count.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul10Count
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/nb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module numBuilder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/parent.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module parent
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/pev.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module postEval
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/pow_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pow_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/seq_divider.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seq_divider
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/seq_multiplier.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seq_multiplier
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/sin_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sin_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/spi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiInterface
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sources_1/new/tan_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tan_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.srcs/sim_1/new/TB4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module newTB_trig

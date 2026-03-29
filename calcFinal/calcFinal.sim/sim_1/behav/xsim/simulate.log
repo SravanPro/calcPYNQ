@@ -1,0 +1,32 @@
+Time resolution is 1 ps
+[TC01] TIMEOUT after 20ms
+[TC01]                                        sin(pi) expected=                  ~0 got: sign=x mant=x exp=x
+[TC02] TIMEOUT after 20ms
+[TC02]                                      sin(pi/2) expected=                ~1.0 got: sign=x mant=x exp=x
+[TC03] TIMEOUT after 20ms
+[TC03]                                      sin(pi/4) expected=            ~0.70711 got: sign=x mant=x exp=x
+[TC04] TIMEOUT after 20ms
+[TC04]                                      sin(2*pi) expected=                  ~0 got: sign=x mant=x exp=x
+[TC05] TIMEOUT after 20ms
+[TC05]                                         sin(e) expected=            ~0.41078 got: sign=x mant=x exp=x
+[TC06] TIMEOUT after 20ms
+[TC06]                                       sin(e/2) expected=            ~0.97803 got: sign=x mant=x exp=x
+[TC07] TIMEOUT after 20ms
+[TC07]                                     sin(0.001) expected=           ~0.001000 got: sign=x mant=x exp=x
+[TC08] TIMEOUT after 20ms
+[TC08]                                       sin(1.5) expected=            ~0.99749 got: sign=x mant=x exp=x
+[TC09] TIMEOUT after 20ms
+[TC09]                                      sin(10.5) expected=           ~-0.87969 got: sign=x mant=x exp=x
+[TC10] TIMEOUT after 20ms
+[TC10]                                    sin(2.5*pi) expected=                ~1.0 got: sign=x mant=x exp=x
+[TC11] TIMEOUT after 20ms
+[TC11]                                      sin(e*pi) expected=            ~0.07960 got: sign=x mant=x exp=x
+[TC12] TIMEOUT after 20ms
+[TC12]                                      sin(e+pi) expected=           ~-0.41078 got: sign=x mant=x exp=x
+[TC13] TIMEOUT after 40ms
+[TC13]               sin(5pi/4)-cos(3pi/4)+tan(7pi/9) expected=           ~-0.83910 got: sign=x mant=x exp=x
+[TC14] TIMEOUT after 60ms
+[TC14]                   pow(1-pow(sin(pi/6),2), 0.5) expected=            ~0.86603 got: sign=x mant=x exp=x
+[TC15] TIMEOUT after 20ms
+[TC15]                                      cos(pi/6) expected=~0.86603  [must match TC14] got: sign=x mant=x exp=x
+INFO: xsimkernel Simulation Memory Usage: 22120 KB (Peak: 22120 KB), Simulation CPU Usage: 41671 ms

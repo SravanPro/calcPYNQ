@@ -1,0 +1,1083 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Mar 28 01:23:39 2026
+# Process ID         : 6280
+# Current directory  : C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.runs/design_1_parent_0_0_synth_1
+# Command line       : vivado.exe -log design_1_parent_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_parent_0_0.tcl
+# Log file           : C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.runs/design_1_parent_0_0_synth_1/design_1_parent_0_0.vds
+# Journal file       : C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.runs/design_1_parent_0_0_synth_1\vivado.jou
+# Running On         : LAPTOP-QR3M58JR
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+# CPU Frequency      : 2400 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 17009 MB
+# Swap memory        : 5100 MB
+# Total Virtual      : 22109 MB
+# Available Virtual  : 5833 MB
+#-----------------------------------------------------------
+source design_1_parent_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 483.188 ; gain = 210.500
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/srava/AppData/Roaming/Xilinx/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/ip_repo/dataBridgeIP_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top design_1_parent_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10148
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1219.645 ; gain = 493.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'testBits', assumed default net type 'wire' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/parent.sv:119]
+INFO: [Synth 8-6157] synthesizing module 'design_1_parent_0_0' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ip/design_1_parent_0_0/synth/design_1_parent_0_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'parent' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/parent.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clockDivider' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/clockDivider.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'clockDivider' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/clockDivider.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/debouncer.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/debouncer.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/decoder.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/decoder.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'keyboard' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/kb.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/kb.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'dataStructure' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/ds.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'dataStructure' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/ds.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'numBuilder' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/nb.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'numBuilder' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/nb.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'inToPost' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/itp.sv:14]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/itp.sv:114]
+INFO: [Synth 8-6155] done synthesizing module 'inToPost' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/itp.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'postEval' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/pev.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'seq_multiplier' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/seq_multiplier.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'seq_multiplier' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/seq_multiplier.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'seq_divider' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/seq_divider.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'seq_divider' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/seq_divider.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'ln_core' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/ln_core.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'ln_core' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/ln_core.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'exp_core' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/exp_core.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'exp_core' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/exp_core.sv:28]
+INFO: [Synth 8-6157] synthesizing module 'log_core' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/log_core.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'log_core' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/log_core.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'pow_core' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/pow_core.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'pow_core' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/pow_core.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'adder' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/add.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'mul10Count' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/mul10Count.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'mul10Count' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/mul10Count.sv:1]
+INFO: [Synth 8-226] default block is never used [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/add.sv:103]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/add.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'multiplier' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/mul.sv:10]
+INFO: [Synth 8-226] default block is never used [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/mul.sv:88]
+INFO: [Synth 8-6155] done synthesizing module 'multiplier' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/mul.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'divider' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/div.sv:10]
+INFO: [Synth 8-226] default block is never used [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/div.sv:91]
+INFO: [Synth 8-6155] done synthesizing module 'divider' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/div.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'sin_core' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/sin_core.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'sin_core' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/sin_core.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'cos_core' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/cos_core.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'cos_core' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/cos_core.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'tan_core' [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/tan_core.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'tan_core' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/tan_core.sv:4]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/pev.sv:534]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/pev.sv:588]
+INFO: [Synth 8-6155] done synthesizing module 'postEval' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/pev.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'parent' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/parent.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_parent_0_0' (0#1) [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ip/design_1_parent_0_0/synth/design_1_parent_0_0.sv:53]
+WARNING: [Synth 8-7137] Register answer_reg in module postEval has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/pev.sv:667]
+WARNING: [Synth 8-7129] Port div_quotient[511] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[510] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[509] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[508] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[507] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[506] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[505] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[504] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[503] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[502] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[501] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[500] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[499] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[498] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[497] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[496] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[495] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[494] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[493] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[492] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[491] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[490] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[489] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[488] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[487] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[486] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[485] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[484] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[483] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[482] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[481] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[480] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[479] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[478] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[477] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[476] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[475] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[474] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[473] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[472] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[471] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[470] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[469] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[468] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[467] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[466] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[465] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[464] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[463] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[462] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[461] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[460] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[459] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[458] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[457] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[456] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[455] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[454] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[453] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[452] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[451] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[450] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[449] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[448] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[447] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[446] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[445] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[444] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[443] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[442] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[441] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[440] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[439] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[438] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[437] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[436] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[435] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[434] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[433] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[432] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[431] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[430] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[429] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[428] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[427] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[426] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[425] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[424] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[423] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[422] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[421] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[420] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[419] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[418] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[417] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[416] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[415] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[414] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[413] in module tan_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port div_quotient[412] in module tan_core is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1499.699 ; gain = 773.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1499.699 ; gain = 773.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1499.699 ; gain = 773.422
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.778 . Memory (MB): peak = 1499.699 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1664.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.948 . Memory (MB): peak = 1689.285 ; gain = 25.125
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1689.285 ; gain = 963.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1689.285 ; gain = 963.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1689.285 ; gain = 963.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'inToPost'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ln_core'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'exp_core'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'log_core'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'pow_core'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'adder'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'multiplier'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'divider'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sin_core'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cos_core'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'tan_core'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'postEval'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              101
+                  S_READ |                              001 |                              000
+                S_RB_POP |                              010 |                              001
+                S_DC_POP |                              011 |                              010
+                S_OP_POP |                              100 |                              011
+                  S_DONE |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'inToPost'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |          00000000000000000000001 |                            00000
+               S_INIT_MW |          00000000000000000000010 |                            00001
+                S_BINRED |          00000000000000000000100 |                            00010
+             S_U_NUM_MUL |          00000000000000000001000 |                            00011
+              S_U_NUM_MW |          00000000000000000010000 |                            00100
+                 S_U_DIV |          00000000000000000100000 |                            00101
+               S_U_DIV_W |          00000000000000001000000 |                            00110
+                S_U2_MUL |          00000000000000010000000 |                            00111
+                 S_U2_MW |          00000000000000100000000 |                            01000
+                 S_U2_DW |          00000000000001000000000 |                            01001
+               S_SER_MUL |          00000000000010000000000 |                            01010
+                S_SER_MW |          00000000000100000000000 |                            01011
+               S_SER_D3W |          00000000001000000000000 |                            01100
+               S_SER_D4W |          00000000010000000000000 |                            01101
+              S_CMB_MUL1 |          00000000100000000000000 |                            01110
+               S_CMB_MW1 |          00000001000000000000000 |                            01111
+              S_CMB_MUL2 |          00000010000000000000000 |                            10000
+               S_CMB_MW2 |          00000100000000000000000 |                            10001
+               S_COMBINE |          00001000000000000000000 |                            10010
+                  S_SIGN |          00010000000000000000000 |                            10011
+             S_NORMALIZE |          00100000000000000000000 |                            10100
+               S_NORM_DW |          01000000000000000000000 |                            10101
+                  S_DONE |          10000000000000000000000 |                            10110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'ln_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                            00000 |                            00000
+               S_INIT_MW |                            00001 |                            00001
+               S_CONVERT |                            00010 |                            00010
+             S_CONV_DIVW |                            00011 |                            00011
+                   S_RR1 |                            00100 |                            00100
+              S_RR1_WAIT |                            00101 |                            00101
+               S_RR2_MUL |                            00110 |                            00110
+                S_RR2_MW |                            00111 |                            00111
+            S_TAYLOR_MUL |                            01000 |                            01000
+             S_TAYLOR_MW |                            01001 |                            01001
+              S_TAYLOR_W |                            01010 |                            01010
+                  S_POW2 |                            01011 |                            01011
+                S_INVERT |                            01100 |                            01100
+              S_INVERT_W |                            01101 |                            01101
+             S_NORMALIZE |                            01110 |                            01110
+             S_NORM_DIVW |                            01111 |                            01111
+                  S_DONE |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'exp_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                             0000 |                             0000
+                   S_LNX |                             0001 |                             0001
+              S_LNX_WAIT |                             0010 |                             0010
+                   S_LNY |                             0011 |                             0011
+              S_LNY_WAIT |                             0100 |                             0100
+                   S_DIV |                             0101 |                             0101
+              S_DIV_WAIT |                             0110 |                             0110
+             S_NORMALIZE |                             0111 |                             0111
+               S_NORM_DW |                             1000 |                             1000
+                  S_DONE |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'log_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                       0000000001 |                             0000
+                   S_LNX |                       0000000010 |                             0001
+              S_LNX_WAIT |                       0000000100 |                             0010
+                   S_MUL |                       0000001000 |                             0011
+              S_MUL_WAIT |                       0000010000 |                             0100
+             S_NORMALIZE |                       0000100000 |                             0101
+               S_NORM_DW |                       0001000000 |                             0110
+                   S_EXP |                       0010000000 |                             0111
+              S_EXP_WAIT |                       0100000000 |                             1000
+                  S_DONE |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'pow_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              000
+               S_FIND_ND |                              001 |                              001
+                  S_CASE |                              010 |                              010
+                S_CASE_A |                              011 |                              011
+                S_CASE_B |                              100 |                              100
+                  S_EVAL |                              101 |                              101
+          S_FINALIZATION |                              110 |                              110
+                  S_DONE |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'adder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                             0001 |                               00
+                  S_EVAL |                             0010 |                               01
+          S_FINALIZATION |                             0100 |                               10
+                  S_DONE |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'multiplier'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                             0001 |                               00
+                  S_EVAL |                             0010 |                               01
+          S_FINALIZATION |                             0100 |                               10
+                  S_DONE |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'divider'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                            00000 |                            00000
+               S_INIT_MW |                            00001 |                            00001
+               S_CONVERT |                            00010 |                            00010
+               S_CONV_DW |                            00011 |                            00011
+                S_RR_DIV |                            00100 |                            00100
+              S_RR_DIV_W |                            00101 |                            00101
+              S_RR_MUL_W |                            00110 |                            00110
+              S_QUADRANT |                            00111 |                            00111
+               S_XR2_MUL |                            01000 |                            01000
+                S_XR2_MW |                            01001 |                            01001
+             S_DENOM_MUL |                            01010 |                            01010
+              S_DENOM_MW |                            01011 |                            01011
+             S_DENOM_MW2 |                            01100 |                            01100
+            S_TAYLOR_MUL |                            01101 |                            01101
+             S_TAYLOR_MW |                            01110 |                            01110
+            S_TAYLOR_DW1 |                            01111 |                            01111
+            S_TAYLOR_DW2 |                            10000 |                            10000
+             S_NORMALIZE |                            10001 |                            10001
+               S_NORM_DW |                            10010 |                            10010
+                  S_DONE |                            10011 |                            10011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sin_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                            00000 |                            00000
+               S_INIT_MW |                            00001 |                            00001
+               S_CONVERT |                            00010 |                            00010
+               S_CONV_DW |                            00011 |                            00011
+                S_RR_DIV |                            00100 |                            00100
+              S_RR_DIV_W |                            00101 |                            00101
+              S_RR_MUL_W |                            00110 |                            00110
+              S_QUADRANT |                            00111 |                            00111
+               S_XR2_MUL |                            01000 |                            01000
+                S_XR2_MW |                            01001 |                            01001
+             S_DENOM_MUL |                            01010 |                            01010
+              S_DENOM_MW |                            01011 |                            01011
+             S_DENOM_MW2 |                            01100 |                            01100
+            S_TAYLOR_MUL |                            01101 |                            01101
+             S_TAYLOR_MW |                            01110 |                            01110
+            S_TAYLOR_DW1 |                            01111 |                            01111
+            S_TAYLOR_DW2 |                            10000 |                            10000
+             S_NORMALIZE |                            10001 |                            10001
+               S_NORM_DW |                            10010 |                            10010
+                  S_DONE |                            10011 |                            10011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'cos_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  T_IDLE |                      00000000001 |                             0000
+                   T_SIN |                      00000000010 |                             0001
+              T_SIN_WAIT |                      00000000100 |                             0010
+                   T_COS |                      00000001000 |                             0011
+              T_COS_WAIT |                      00000010000 |                             0100
+               T_DIV_MUL |                      00000100000 |                             0101
+             T_DIV_MUL_W |                      00001000000 |                             0110
+              T_DIV_WAIT |                      00010000000 |                             0111
+             T_NORMALIZE |                      00100000000 |                             1000
+               T_NORM_DW |                      01000000000 |                             1001
+                  T_DONE |                      10000000000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'tan_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              101
+                  S_READ |                              001 |                              000
+                S_OP_POP |                              010 |                              001
+                S_LAUNCH |                              011 |                              010
+                  S_WAIT |                              100 |                              011
+                  S_DONE |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'postEval'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1689.285 ; gain = 963.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input  513 Bit       Adders := 1     
+	   2 Input  512 Bit       Adders := 1     
+	   3 Input  256 Bit       Adders := 1     
+	   2 Input  256 Bit       Adders := 5     
+	   3 Input  192 Bit       Adders := 2     
+	   2 Input  192 Bit       Adders := 2     
+	   3 Input  128 Bit       Adders := 1     
+	   2 Input  128 Bit       Adders := 1     
+	   2 Input   96 Bit       Adders := 4     
+	   3 Input   96 Bit       Adders := 2     
+	   2 Input   84 Bit       Adders := 2     
+	   2 Input   72 Bit       Adders := 1     
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   52 Bit       Adders := 2     
+	   2 Input   35 Bit       Adders := 1     
+	   3 Input   35 Bit       Adders := 2     
+	   2 Input   34 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 8     
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input   19 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 8     
+	   2 Input    7 Bit       Adders := 13    
+	   3 Input    7 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 13    
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	              512 Bit    Registers := 36    
+	              256 Bit    Registers := 11    
+	              192 Bit    Registers := 10    
+	              128 Bit    Registers := 2     
+	               96 Bit    Registers := 4     
+	               84 Bit    Registers := 2     
+	               74 Bit    Registers := 2     
+	               72 Bit    Registers := 1     
+	               68 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               44 Bit    Registers := 130   
+	               35 Bit    Registers := 1     
+	               34 Bit    Registers := 28    
+	               32 Bit    Registers := 7     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 41    
+	                7 Bit    Registers := 38    
+	                6 Bit    Registers := 9     
+	                5 Bit    Registers := 7     
+	                1 Bit    Registers := 108   
++---Multipliers : 
+	              34x50  Multipliers := 1     
+	              34x40  Multipliers := 1     
+	              34x34  Multipliers := 1     
+	               4x34  Multipliers := 2     
++---Muxes : 
+	   2 Input  512 Bit        Muxes := 31    
+	  23 Input  512 Bit        Muxes := 4     
+	  20 Input  512 Bit        Muxes := 8     
+	  17 Input  512 Bit        Muxes := 5     
+	  11 Input  512 Bit        Muxes := 2     
+	  10 Input  512 Bit        Muxes := 2     
+	   2 Input  256 Bit        Muxes := 3     
+	  23 Input  256 Bit        Muxes := 6     
+	  17 Input  256 Bit        Muxes := 2     
+	   2 Input  192 Bit        Muxes := 2     
+	  20 Input  192 Bit        Muxes := 6     
+	  17 Input  128 Bit        Muxes := 1     
+	   2 Input   96 Bit        Muxes := 4     
+	  20 Input   96 Bit        Muxes := 4     
+	  11 Input   84 Bit        Muxes := 1     
+	  10 Input   84 Bit        Muxes := 1     
+	   4 Input   74 Bit        Muxes := 1     
+	  10 Input   72 Bit        Muxes := 1     
+	   4 Input   68 Bit        Muxes := 1     
+	  17 Input   64 Bit        Muxes := 1     
+	   2 Input   54 Bit        Muxes := 2     
+	   6 Input   44 Bit        Muxes := 2     
+	   2 Input   44 Bit        Muxes := 285   
+	   2 Input   39 Bit        Muxes := 32    
+	   8 Input   35 Bit        Muxes := 1     
+	   2 Input   34 Bit        Muxes := 7     
+	  10 Input   34 Bit        Muxes := 1     
+	   8 Input   34 Bit        Muxes := 2     
+	  23 Input   32 Bit        Muxes := 1     
+	  20 Input   32 Bit        Muxes := 2     
+	  10 Input   32 Bit        Muxes := 2     
+	  17 Input   32 Bit        Muxes := 1     
+	  11 Input   32 Bit        Muxes := 1     
+	  23 Input   23 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 2     
+	  23 Input   16 Bit        Muxes := 1     
+	  17 Input   16 Bit        Muxes := 1     
+	  11 Input   11 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	  10 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 3     
+	  23 Input    8 Bit        Muxes := 1     
+	  20 Input    8 Bit        Muxes := 6     
+	  17 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 64    
+	   4 Input    7 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 7     
+	  10 Input    7 Bit        Muxes := 1     
+	   5 Input    7 Bit        Muxes := 1     
+	   8 Input    7 Bit        Muxes := 7     
+	   6 Input    6 Bit        Muxes := 5     
+	   3 Input    6 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 3     
+	  20 Input    5 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 10    
+	  17 Input    5 Bit        Muxes := 2     
+	  10 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 8     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 10    
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 620   
+	  23 Input    1 Bit        Muxes := 20    
+	   4 Input    1 Bit        Muxes := 18    
+	  20 Input    1 Bit        Muxes := 40    
+	  10 Input    1 Bit        Muxes := 29    
+	  17 Input    1 Bit        Muxes := 18    
+	  11 Input    1 Bit        Muxes := 14    
+	   6 Input    1 Bit        Muxes := 124   
+	   8 Input    1 Bit        Muxes := 17    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3917] design design_1_parent_0_0 has port axiOut[319] driven by constant 0
+INFO: [Synth 8-3917] design design_1_parent_0_0 has port axiOut[318] driven by constant 0
+INFO: [Synth 8-3917] design design_1_parent_0_0 has port axiOut[317] driven by constant 0
+INFO: [Synth 8-3917] design design_1_parent_0_0 has port axiOut[315] driven by constant 0
+INFO: [Synth 8-3917] design design_1_parent_0_0 has port axiOut[314] driven by constant 0
+INFO: [Synth 8-3917] design design_1_parent_0_0 has port axiOut[307] driven by constant 0
+INFO: [Synth 8-3917] design design_1_parent_0_0 has port axiOut[306] driven by constant 0
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pow0/mul_multiplicand_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (exp0/\mul_multiplicand_reg[511] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (exp0/signRes_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pow0/div_dividend_reg[511] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pow0/signRes_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tan0/\mul_multiplicand_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tan0/\div_divisor_reg[511] )
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 0. Recommended levels of pipeline registers is 6. [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/log_core.sv:158]
+DSP Report: Generating DSP div_dividend0, operation Mode is: A*B.
+DSP Report: operator div_dividend0 is absorbed into DSP div_dividend0.
+DSP Report: operator div_dividend0 is absorbed into DSP div_dividend0.
+DSP Report: Generating DSP div_dividend0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator div_dividend0 is absorbed into DSP div_dividend0.
+DSP Report: operator div_dividend0 is absorbed into DSP div_dividend0.
+DSP Report: Generating DSP div_dividend0, operation Mode is: A*(B:0x8000).
+DSP Report: operator div_dividend0 is absorbed into DSP div_dividend0.
+DSP Report: operator div_dividend0 is absorbed into DSP div_dividend0.
+DSP Report: Generating DSP div_dividend0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator div_dividend0 is absorbed into DSP div_dividend0.
+DSP Report: operator div_dividend0 is absorbed into DSP div_dividend0.
+DSP Report: Generating DSP div_dividend0, operation Mode is: A*(B:0x8000).
+DSP Report: operator div_dividend0 is absorbed into DSP div_dividend0.
+DSP Report: operator div_dividend0 is absorbed into DSP div_dividend0.
+DSP Report: Generating DSP div_dividend0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator div_dividend0 is absorbed into DSP div_dividend0.
+DSP Report: operator div_dividend0 is absorbed into DSP div_dividend0.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (log0/\div_dividend_reg[511] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mul_multiplier_reg[511] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\div_divisor_reg[511] )
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[192]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[193]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[194]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[195]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[196]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[197]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[198]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[199]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[200]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[201]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[202]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[203]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[204]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[205]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[206]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[207]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[208]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[209]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[210]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[211]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[212]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[213]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[214]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[215]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[216]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[217]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[218]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[219]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[220]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[221]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[222]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[223]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[224]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[225]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[226]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[227]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[228]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[229]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[230]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[231]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[232]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[233]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[234]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[235]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[236]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[237]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[238]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[239]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[240]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[241]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[242]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[243]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[244]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[245]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[246]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[247]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[248]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[249]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[250]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[251]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[252]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[253]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[254]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[255]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[256]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[257]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[258]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[259]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[260]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[261]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[262]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[263]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[264]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[265]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[266]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[267]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[268]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[269]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[270]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[271]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[272]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[273]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[274]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[275]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[276]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[277]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[278]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[279]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[280]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[281]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[282]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[283]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[284]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[285]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[286]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[287]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[288]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[289]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Synth 8-3886] merging instance 'sin0/mul_multiplier_reg[290]' (FDCE) to 'sin0/mul_multiplier_reg[511]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sin0/\mul_multiplier_reg[511] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sin0/\div_divisor_reg[511] )
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'mul_multiplier_reg[256]' (FDCE) to 'mul_multiplicand_reg[256]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mul_multiplicand_reg[511] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\div_divisor_reg[511] )
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 1. Recommended levels of pipeline registers is 4. [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/div.sv:98]
+DSP Report: Generating DSP mantY0, operation Mode is: A*(B:0x11000).
+DSP Report: operator mantY0 is absorbed into DSP mantY0.
+DSP Report: operator mantY0 is absorbed into DSP mantY0.
+DSP Report: Generating DSP mantY0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mantY0 is absorbed into DSP mantY0.
+DSP Report: operator mantY0 is absorbed into DSP mantY0.
+DSP Report: Generating DSP mantY0, operation Mode is: A*(B:0x11000).
+DSP Report: operator mantY0 is absorbed into DSP mantY0.
+DSP Report: operator mantY0 is absorbed into DSP mantY0.
+DSP Report: Generating DSP mantY0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mantY0 is absorbed into DSP mantY0.
+DSP Report: operator mantY0 is absorbed into DSP mantY0.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[47]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[46]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[45]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[44]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[43]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[42]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[41]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[40]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[39]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[38]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[37]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[36]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[35]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[34]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[33]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[32]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[31]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[30]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[29]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[28]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[27]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[26]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[25]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[24]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[23]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[22]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[21]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[20]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[19]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[18]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[17]) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[47]__0) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[46]__0) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[45]__0) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[44]__0) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[43]__0) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[42]__0) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[41]__0) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[40]__0) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[47]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[46]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[45]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[44]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[43]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[42]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[41]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[40]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[39]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[38]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[37]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[36]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[35]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[34]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[33]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[32]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[31]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[30]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[29]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[28]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[27]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[26]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[25]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[24]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[23]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[22]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[21]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[20]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[19]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[18]__1) is unused and will be removed from module divider.
+WARNING: [Synth 8-3332] Sequential element (mantY_reg[17]__1) is unused and will be removed from module divider.
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 0. Recommended levels of pipeline registers is 4. [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/mul.sv:104]
+DSP Report: Generating DSP mantProd0, operation Mode is: A*B.
+DSP Report: operator mantProd0 is absorbed into DSP mantProd0.
+DSP Report: operator mantProd0 is absorbed into DSP mantProd0.
+DSP Report: Generating DSP mantProd0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mantProd0 is absorbed into DSP mantProd0.
+DSP Report: operator mantProd0 is absorbed into DSP mantProd0.
+DSP Report: Generating DSP mantProd0, operation Mode is: A*B.
+DSP Report: operator mantProd0 is absorbed into DSP mantProd0.
+DSP Report: operator mantProd0 is absorbed into DSP mantProd0.
+DSP Report: Generating DSP mantProd0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mantProd0 is absorbed into DSP mantProd0.
+DSP Report: operator mantProd0 is absorbed into DSP mantProd0.
+INFO: [Synth 8-5546] ROM "p_0_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_10_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_10_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (add0/\n_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/sign_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[0][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[1][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[2][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[3][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[4][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[5][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[6][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[7][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[8][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[9][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[10][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[11][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[12][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[13][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[14][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[15][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[16][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[17][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[18][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[19][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[20][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[21][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[22][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[23][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[24][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[25][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[26][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[27][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[28][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[29][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[30][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nb/\memOut_reg[31][41] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:15 ; elapsed = 00:04:58 . Memory (MB): peak = 1689.285 ; gain = 963.008
+---------------------------------------------------------------------------------
+ Sort Area is postEval__GB9 mantProd0_0 : 0 0 : 3101 6221 : Used 1 time 0
+ Sort Area is postEval__GB9 mantProd0_0 : 0 1 : 3120 6221 : Used 1 time 0
+ Sort Area is postEval__GB9 mantProd0_3 : 0 0 : 3101 6221 : Used 1 time 0
+ Sort Area is postEval__GB9 mantProd0_3 : 0 1 : 3120 6221 : Used 1 time 0
+ Sort Area is postEval__GB3 div_dividend0_5 : 0 0 : 3101 6137 : Used 1 time 0
+ Sort Area is postEval__GB3 div_dividend0_5 : 0 1 : 3036 6137 : Used 1 time 0
+ Sort Area is divider mantY0_0 : 0 0 : 790 4309 : Used 1 time 0
+ Sort Area is divider mantY0_0 : 0 1 : 3519 4309 : Used 1 time 0
+ Sort Area is divider mantY0_3 : 0 0 : 790 4309 : Used 1 time 0
+ Sort Area is divider mantY0_3 : 0 1 : 3519 4309 : Used 1 time 0
+ Sort Area is postEval__GB3 div_dividend0_0 : 0 0 : 430 3550 : Used 1 time 0
+ Sort Area is postEval__GB3 div_dividend0_0 : 0 1 : 3120 3550 : Used 1 time 0
+ Sort Area is postEval__GB3 div_dividend0_3 : 0 0 : 430 3466 : Used 1 time 0
+ Sort Area is postEval__GB3 div_dividend0_3 : 0 1 : 3036 3466 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|log_core    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|log_core    | (PCIN>>17)+A*B | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|log_core    | A*(B:0x8000)   | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|log_core    | (PCIN>>17)+A*B | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|log_core    | A*(B:0x8000)   | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|log_core    | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|divider     | A*(B:0x11000)  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|divider     | (PCIN>>17)+A*B | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|divider     | A*(B:0x11000)  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|divider     | (PCIN>>17)+A*B | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier  | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier  | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:41 ; elapsed = 00:05:29 . Memory (MB): peak = 1781.828 ; gain = 1055.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:55 ; elapsed = 00:06:46 . Memory (MB): peak = 1813.324 ; gain = 1087.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/div.sv:82]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/div.sv:82]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/mul.sv:79]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/mul.sv:79]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/mul.sv:79]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/mul.sv:79]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/mul.sv:79]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/mul.sv:79]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/mul.sv:79]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.gen/sources_1/bd/design_1/ipshared/498c/src/mul.sv:79]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:06:12 ; elapsed = 00:07:11 . Memory (MB): peak = 1825.293 ; gain = 1099.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:06:27 ; elapsed = 00:07:27 . Memory (MB): peak = 2053.305 ; gain = 1327.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:27 ; elapsed = 00:07:27 . Memory (MB): peak = 2053.305 ; gain = 1327.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:31 ; elapsed = 00:07:31 . Memory (MB): peak = 2071.289 ; gain = 1345.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:32 ; elapsed = 00:07:31 . Memory (MB): peak = 2071.289 ; gain = 1345.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:44 ; elapsed = 00:07:44 . Memory (MB): peak = 2071.289 ; gain = 1345.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:44 ; elapsed = 00:07:44 . Memory (MB): peak = 2071.289 ; gain = 1345.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|divider     | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|divider     | (PCIN>>17+A*B)' | 23     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|divider     | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|divider     | (PCIN>>17+A*B)' | 23     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|log_core    | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|log_core    | PCIN>>17+A*B    | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|log_core    | A*B             | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|log_core    | PCIN>>17+A*B    | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|log_core    | A*B             | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|log_core    | PCIN>>17+A*B    | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier  | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier  | PCIN>>17+A*B    | 0      | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier  | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier  | PCIN>>17+A*B    | 0      | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |  4037|
+|2     |DSP48E1 |    14|
+|5     |LUT1    |  1059|
+|6     |LUT2    | 11762|
+|7     |LUT3    |  7909|
+|8     |LUT4    |  6791|
+|9     |LUT5    |  5474|
+|10    |LUT6    | 13983|
+|11    |MUXF7   |  2024|
+|12    |MUXF8   |    87|
+|13    |FDCE    | 23203|
+|14    |FDPE    |    15|
+|15    |FDRE    |  1419|
+|16    |FDSE    |    57|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:44 ; elapsed = 00:07:44 . Memory (MB): peak = 2071.289 ; gain = 1345.012
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 270 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:17 ; elapsed = 00:07:34 . Memory (MB): peak = 2071.289 ; gain = 1155.426
+Synthesis Optimization Complete : Time (s): cpu = 00:06:44 ; elapsed = 00:07:45 . Memory (MB): peak = 2071.289 ; gain = 1345.012
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.781 . Memory (MB): peak = 2093.902 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6162 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 2110.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 4985cf4c
+INFO: [Common 17-83] Releasing license: Synthesis
+274 Infos, 171 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:07:00 ; elapsed = 00:08:05 . Memory (MB): peak = 2110.930 ; gain = 1607.629
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.220 . Memory (MB): peak = 2110.930 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.runs/design_1_parent_0_0_synth_1/design_1_parent_0_0.dcp' has been generated.
+write_vhdl: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2110.930 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_parent_0_0, cache-ID = 5982918084b6c0bf
+INFO: [Coretcl 2-1174] Renamed 20 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.216 . Memory (MB): peak = 2110.930 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Vivado/FPGA/lab_Practise_PYNQ/misc_0/calcFinal/calcFinal.runs/design_1_parent_0_0_synth_1/design_1_parent_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_parent_0_0_utilization_synth.rpt -pb design_1_parent_0_0_utilization_synth.pb
+write_vhdl: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2110.930 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 28 01:32:46 2026...

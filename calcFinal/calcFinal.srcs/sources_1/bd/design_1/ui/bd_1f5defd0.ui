@@ -1,0 +1,41 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.601277",
+   "Default View_TopLeft":"-246,-757",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 threadsafe
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1370 -y -100 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1370 -y -130 -defaultsOSRD
+preplace port IIC_0 -pg 1 -lvl 5 -x 1370 -y -450 -defaultsOSRD
+preplace port port-id_done_0 -pg 1 -lvl 5 -x 1370 -y -340 -defaultsOSRD
+preplace port port-id_reset_0 -pg 1 -lvl 0 -x -40 -y -330 -defaultsOSRD
+preplace portBus encodedRawInput_0 -pg 1 -lvl 0 -x -40 -y -300 -defaultsOSRD
+preplace inst dataBridgeIP_0 -pg 1 -lvl 3 -x 880 -y -10 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 450 -y -50 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -x 1210 -y -10 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 3 -x 880 -y -200 -defaultsOSRD
+preplace inst parent_0 -pg 1 -lvl 2 -x 450 -y -330 -defaultsOSRD
+preplace inst axi_iic_0 -pg 1 -lvl 1 -x 130 -y -430 -defaultsOSRD
+preplace netloc encodedRawInput_0_1 1 0 2 N -300 260
+preplace netloc parent_0_axiOut 1 2 1 700 -320n
+preplace netloc parent_0_done 1 2 3 NJ -340 NJ -340 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 10 -350 250 -160 690 120 1080
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 660 -220n
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 4 0 60 N 60 700 130 1070
+preplace netloc reset_0_1 1 0 2 NJ -330 NJ
+preplace netloc axi_iic_0_IIC 1 1 4 NJ -450 NJ -450 NJ -450 NJ
+preplace netloc axi_smc_M00_AXI 1 2 3 710 100 NJ 100 1350
+preplace netloc axi_smc_M01_AXI 1 0 5 -10 110 NJ 110 NJ 110 NJ 110 1340
+preplace netloc processing_system7_0_DDR 1 2 3 650J 90 1050J -90 1350
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 670J -100 NJ -100 1340
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 2 640J 80 1060
+levelinfo -pg 1 -40 130 450 880 1210 1370
+pagesize -pg 1 -db -bbox -sgen -250 -540 1480 260
+"
+}
+{
+   "da_axi4_cnt":"2",
+   "da_board_cnt":"1",
+   "da_ps7_cnt":"1"
+}

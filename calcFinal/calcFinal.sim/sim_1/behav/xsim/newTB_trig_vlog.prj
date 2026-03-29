@@ -1,0 +1,32 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" \
+"../../../../calcFinal.srcs/sources_1/new/add.sv" \
+"../../../../calcFinal.srcs/sources_1/new/clockDivider.sv" \
+"../../../../calcFinal.srcs/sources_1/new/cos_core.sv" \
+"../../../../calcFinal.srcs/sources_1/new/debouncer.sv" \
+"../../../../calcFinal.srcs/sources_1/new/decoder.sv" \
+"../../../../calcFinal.srcs/sources_1/new/div.sv" \
+"../../../../calcFinal.srcs/sources_1/new/ds.sv" \
+"../../../../calcFinal.srcs/sources_1/new/exp_core.sv" \
+"../../../../calcFinal.srcs/sources_1/new/itp.sv" \
+"../../../../calcFinal.srcs/sources_1/new/kb.sv" \
+"../../../../calcFinal.srcs/sources_1/new/ln_core.sv" \
+"../../../../calcFinal.srcs/sources_1/new/log_core.sv" \
+"../../../../calcFinal.srcs/sources_1/new/mul.sv" \
+"../../../../calcFinal.srcs/sources_1/new/mul10Count.sv" \
+"../../../../calcFinal.srcs/sources_1/new/nb.sv" \
+"../../../../calcFinal.srcs/sources_1/new/parent.sv" \
+"../../../../calcFinal.srcs/sources_1/new/pev.sv" \
+"../../../../calcFinal.srcs/sources_1/new/pow_core.sv" \
+"../../../../calcFinal.srcs/sources_1/new/seq_divider.sv" \
+"../../../../calcFinal.srcs/sources_1/new/seq_multiplier.sv" \
+"../../../../calcFinal.srcs/sources_1/new/sin_core.sv" \
+"../../../../calcFinal.srcs/sources_1/new/spi.sv" \
+"../../../../calcFinal.srcs/sources_1/new/tan_core.sv" \
+"../../../../calcFinal.srcs/sim_1/new/TB4.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

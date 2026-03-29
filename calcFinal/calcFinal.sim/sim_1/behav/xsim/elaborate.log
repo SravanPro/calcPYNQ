@@ -1,0 +1,37 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot newTB_trig_behav xil_defaultlib.newTB_trig xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clockDivider
+Compiling module xil_defaultlib.debouncer(freq=100000,debounceTi...
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.keyboard
+Compiling module xil_defaultlib.dataStructure(depth=50)
+Compiling module xil_defaultlib.numBuilder(depth=50)
+Compiling module xil_defaultlib.inToPost(depth=50)
+Compiling module xil_defaultlib.seq_multiplier
+Compiling module xil_defaultlib.seq_divider
+Compiling module xil_defaultlib.ln_core
+Compiling module xil_defaultlib.exp_core
+Compiling module xil_defaultlib.log_core
+Compiling module xil_defaultlib.pow_core
+Compiling module xil_defaultlib.mul10Count
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.multiplier
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.sin_core
+Compiling module xil_defaultlib.cos_core
+Compiling module xil_defaultlib.tan_core
+Compiling module xil_defaultlib.postEval(depth=50)
+Compiling module xil_defaultlib.spiInterface(depth=50)
+Compiling module xil_defaultlib.parent(depth=50,freq=100000,debo...
+Compiling module xil_defaultlib.newTB_trig
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot newTB_trig_behav
