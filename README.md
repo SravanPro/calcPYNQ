@@ -3,7 +3,7 @@ Scientific calculator, with the PYNQ Z2's onboard processor now driving the LCD 
 
 The arduino is now only being used for supplying power to the custom keyboard (3.3V) and the LCD display (5V).
 
-https://github.com/user-attachments/assets/dd0c0fe2-b2ab-4703-a6a6-311b376d9f0f
+https://github.com/user-attachments/assets/389a4112-c7c6-4885-92b8-7969b5daa8bb
 
 <img width="612" height="902" alt="Image" src="https://github.com/user-attachments/assets/d8424740-f052-4ebc-b522-486a7966daea" />
 
