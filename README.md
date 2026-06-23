@@ -79,11 +79,11 @@ Each stage is triggered by the `done` pulse of the stage before it. The pipeline
 
 ### `clockDivider`
 
-**Role:** Divides the input clock by 64 for use as the internal pipeline clock.
+**Role:** Divides the input clock by 64 for the internal pipeline clock.
 
-**Mechanism:** A 6-bit counter increments each `clockIn` cycle; when it hits 31 it resets and toggles `clock`. Result: `clock` frequency = `clockIn / 64`.
+**Mechanism:** A 6-bit counter increments each `clockIn` cycle; when it hits 31 it resets and toggles `clock`. Result: `clock` = `clockIn / 64`. On the ZYNQ at 100 MHz `clockIn`, this gives a ~1.5 MHz pipeline clock.
 
-**Used by:** `parent` — feeds `clock` to all pipeline modules (`keyboard`, `ds`, `nb`, `itp`, `pev`). `debouncer` intentionally keeps `clockIn` directly for accurate debounce timing.
+**Used by:** `parent` — feeds `clock` to all pipeline modules (`keyboard`, `ds`, `nb`, `itp`, `pev`). `debouncer` keeps `clockIn` directly for accurate millisecond timing.
 
 **Dependencies:** None.
 
@@ -93,9 +93,9 @@ Each stage is triggered by the `done` pulse of the stage before it. The pipeline
 
 **Role:** Expands a 5-bit active-low encoded input into a 32-bit active-high one-hot output.
 
-**Mechanism:** Combinational. Inverts the 5-bit input to get a 0–31 index, sets `out[index] = 1`, all others 0. This maps the 32 possible button combinations from the physical encoding to individual named signals.
+**Mechanism:** Purely combinational. Inverts the 5-bit input (`~in`) to get a 0–31 index, then sets `out[index] = 1` with all others 0. Converts the encoded button matrix signal into 32 individually named button lines.
 
-**Used by:** `parent` — its 32-bit output is then manually remapped (bit-assigns) to `b[26:0]`, `del`, `ptrLeft`, `ptrRight`, `jump`, `eval`.
+**Used by:** `parent` — the 32-bit output is then manually bit-assigned to `b[26:0]`, `del`, `ptrLeft`, `ptrRight`, `jump`, `eval`.
 
 **Dependencies:** None.
 
@@ -514,6 +514,92 @@ axiOut[319:0] = { 3'b000, jump,       // 4 bits
 ```
 
 The `axiOut` bus is intended for an external SPI display controller or AXI peripheral to read back both the current buffer state and the computed answer simultaneously.
+
+---
+
+## PYNQ Integration — Block Design & Python Driver
+
+<img width="1822" height="708" alt="Image" src="https://github.com/user-attachments/assets/26f69c1a-f80f-4dec-8876-acca89c55159" />
+
+### Block Design Overview
+
+The Vivado block design connects the custom RTL to the ZYNQ7 Processing System (PS) so the ARM CPU can read back the calculator's state over AXI.
+
+| Block | Role |
+|-------|------|
+| `processing_system7_0` | ZYNQ7 PS — ARM Cortex-A9. Generates `FCLK_CLK0` (100 MHz) and `M_AXI_GP0` master bus. |
+| `rst_ps7_0_100M` | Processor System Reset — synchronises resets across the fabric. |
+| `parent_v1_0` | The entire RTL calculator. Inputs: `clockIn`, `reset`, `encodedRawInput[4:0]`. Outputs: `axiOut[319:0]`, `done`. |
+| `dataBridgeIP_0` | Custom AXI slave IP. Receives `fpgaIn[319:0]` from `parent`, exposes it as 10 × 32-bit AXI registers readable by the PS over `M_AXI_GP0`. |
+| `axi_smc` | AXI SmartConnect — routes `M_AXI_GP0` from the PS to both `dataBridgeIP_0` and `axi_iic_0`. |
+| `axi_iic_0` | AXI IIC controller — gives the PS I²C master capability, connected to the LCD display via `IIC_0`. |
+
+**Signal flow in the block design:**
+
+```
+encodedRawInput[4:0] ──▶ parent_v1_0
+reset_0              ──▶ parent_v1_0
+
+parent_v1_0.axiOut[319:0] ──▶ dataBridgeIP_0.fpgaIn[319:0]
+parent_v1_0.done          ──▶ done_0 (external port)
+
+PS M_AXI_GP0 ──▶ axi_smc ──▶ dataBridgeIP_0 (read registers)
+                          ──▶ axi_iic_0      (write LCD)
+```
+
+The PS never writes to the calculator — it only reads. The FPGA fabric runs autonomously; the PS polls the result.
+
+---
+
+### Python Driver — `read_fpga()` and LCD rendering
+
+The Python script runs on the ZYNQ PS under PYNQ Linux. It polls the `dataBridgeIP_0` AXI registers, decodes the packed `axiOut` bus, and drives a 16×2 HD44780 LCD over I²C.
+
+#### Register layout
+
+`dataBridgeIP_0` exposes `axiOut[319:0]` as 10 consecutive 32-bit registers (reg0 = LSBs, reg9 = MSBs):
+
+```
+axiOut[319:0]:
+  [319:316]  3'b000, jump
+  [315:308]  2'b00,  sizeOut[5:0]
+  [307:300]  2'b00,  ptrOut[5:0]
+  [299:256]  answer[43:0]          ← spans reg9[11:0] + reg8[31:0]
+  [255:0]    flat_mem[255:0]       ← regs 7 down to 0
+```
+
+#### What `read_fpga()` does
+
+1. **Reads all 10 registers** in one loop: `regs[i] = my_calc.read(i * 4)`.
+2. **Extracts fields from `reg9`:** `sizeOut` (bits 25:20), `ptrOut` (bits 19:12 — wait, actually 19:14 per the 6-bit field), and `ans_hi` (bits 11:0).
+3. **Reconstructs the 44-bit answer:** `(ans_hi << 32) | reg8`.
+4. **Decodes `flat_mem`:** unpacks regs 0–7 into 32 bytes (LSB-first per register), then maps each byte through `CHAR_MAP` to get the display character for each token up to `sizeOut`.
+5. **Sliding window:** keeps the cursor visible on the 16-character display — `start = max(0, ptrOut − 15)`, shows `equation[start : start+16]`.
+6. **Decodes the answer:**
+   - `sign`     = bit 41 of raw_answer
+   - `mantissa` = bits 40:7 (34 bits)
+   - `exponent` = bits 6:0 (7-bit signed two's complement)
+   - `value = (−1)^sign × mantissa × 10^exponent`
+   - Formatted as `{value:.8e}` for the bottom LCD line.
+
+#### LCD rendering
+
+`lcd_write()` implements the standard HD44780 4-bit mode over I²C PCF8574 expander (address `0x27`). Each byte is sent as two nibbles, each nibbled twice — once with `E=1` (latch) and once with `E=0`. The backlight bit (`0x08`) is always set.
+
+`write_lcd_line(row, text)` sends the row address command (`0x80` for row 0, `0xC0` for row 1), then sends each character. The π character is a special case — sent as raw HD44780 byte `0xF7` which the LCD's ROM maps to the π glyph.
+
+#### Main loop
+
+Polls every 50 ms. Only re-writes the LCD when either line has changed — avoids I²C traffic and LCD flicker on idle frames.
+
+```
+while True:
+    top, bottom = read_fpga()          # decode FPGA state
+    if changed:
+        write_lcd_line(0, top)         # equation (with cursor window)
+        write_lcd_line(1, bottom)      # answer in scientific notation
+    sleep(0.05)
+```
 
 ---
 
