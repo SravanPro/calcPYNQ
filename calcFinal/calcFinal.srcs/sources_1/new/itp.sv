@@ -8,6 +8,35 @@
 // 00: number 
 // 01: operator/func/bracket/etc
 
+/*
+algo:
+Numbers (operands)
+→ Immediately append to the postfix output.
+Functions (e.g., sin, max)
+→ Push onto the operator stack.
+Left parenthesis (
+→ Push onto the stack. It acts as a barrier.
+Comma , (function argument separator)
+→ Pop all operators until the nearest (.
+→ Do not pop the (.
+
+Operators (+, -, *, /)
+→ While the stack top is
+
+a function, or
+an operator with greater or equal precedence,
+
+pop it to the postfix output.
+Finally, push the current operator.
+
+Right parenthesis )
+→ Pop everything until (.
+→ Remove the (.
+→ If a function is immediately below that (, pop the function to postfix as well.
+End of expression
+→ Pop every remaining operator to postfix.
+*/
+
 
 
 
